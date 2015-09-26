@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.pivotal.mss.apigateway:apigateway-core:1.2.0.BUILD-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/pivotal/mss/apigateway/apigateway-core/1.2.0.BUILD-SNAPSHOT/apigateway-core-1.2.0.BUILD-20150709.140910-54.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/pivotal/mss/apigateway/apigateway-core/1.2.0.BUILD-SNAPSHOT/apigateway-core-1.2.0.BUILD-20150709.140910-54-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/pivotal/mss/apigateway/apigateway-core/1.2.0.BUILD-SNAPSHOT/apigateway-core-1.2.0.BUILD-20150709.140910-54-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

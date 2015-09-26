@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: io.pivotal.pcfms.nashorn:spring-boot-nashorn:tests:1.2.0.BUILD-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/pivotal/pcfms/nashorn/spring-boot-nashorn/1.2.0.BUILD-SNAPSHOT/spring-boot-nashorn-1.2.0.BUILD-20150709.140934-54-tests.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/io/pivotal/pcfms/nashorn/spring-boot-nashorn/1.2.0.BUILD-SNAPSHOT/spring-boot-nashorn-1.2.0.BUILD-20150709.140934-54-test-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/io/pivotal/pcfms/nashorn/spring-boot-nashorn/1.2.0.BUILD-SNAPSHOT/spring-boot-nashorn-1.2.0.BUILD-20150709.140934-54-test-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
