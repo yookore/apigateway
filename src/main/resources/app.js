@@ -1,6 +1,9 @@
 var Router = require("Router");
+var UADetector = require('UADetector');
 
 var appRouter = new Router();
+
+
 
 appRouter.get("/hello", function(req,res) {
   res.setBody({message: "Hello World!"});
@@ -8,7 +11,15 @@ appRouter.get("/hello", function(req,res) {
 
 var helloService = spring.getBean("helloService");
 appRouter.get("/hello-spring", function(req,res) {
-  res.setBody({message: helloService.getHelloMessage()});
+  res.setBody(helloService.getHelloMessage());
+});
+
+appRouter.get("/uadetector",function(req,res) {
+  res.setBody({
+    your_useragent_is : req.headers['user-agent'],
+    UADetector_says_this : UADetector(req),
+    username : "jomski2009"
+  });
 });
 
 

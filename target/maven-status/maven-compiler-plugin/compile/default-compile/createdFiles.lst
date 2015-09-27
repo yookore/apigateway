@@ -1,2 +1,3 @@
-com/yookos/HelloService.class
+com/yookos/services/UserService.class
+com/yookos/services/HelloService.class
 com/yookos/Application.class
