@@ -1,0 +1,15 @@
+---
+applications:
+- name: yookore-proxy
+  instances: 2
+  memory: 2G
+  command: /app/start.sh -t 180
+  buildpack: https://github.com/cloudfoundry/buildpack-nodejs.git
+  timeout: 180
+  env:
+      UAS_ENV_NAME: dev
+      WEB_MEMORY: 1024
+  services:
+    - redis
+    - rabbitmq
+    - ih-cassandra-cluster

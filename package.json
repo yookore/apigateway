@@ -1,0 +1,26 @@
+{
+  "name": "yookore-proxy",
+  "version": "1.0.0",
+  "description": "Minimal proxy service for Yookore Microservices",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://svn.yookos.com/svn/yookore-proxy/trunk"
+  },
+  "keywords": [
+    "proxy",
+    "yookore",
+    "microservice"
+  ],
+  "author": "kayodeo@yookos.com",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.5.3",
+    "express": "^4.12.3",
+    "express-http-proxy": "^0.3.1",
+    "http-proxy": "^1.9.0"
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "rules": [
+    "^/auth/(.*)$ http://localhost:3000/auth/$1 [P]"
+  ]
+}
