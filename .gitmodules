@@ -1,0 +1,3 @@
+[submodule "strong-gateway"]
+	path = strong-gateway
+	url = https://github.com/yookore/strong-gateway
