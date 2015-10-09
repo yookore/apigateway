@@ -7,7 +7,7 @@ applications:
   buildpack: https://github.com/cloudfoundry/buildpack-nodejs.git
   timeout: 180
   env:
-      UAS_ENV_NAME: dev
+      YOOKORE_PROXY_ENV_NAME: dev
       WEB_MEMORY: 1024
   services:
     - redis

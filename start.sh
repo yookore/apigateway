@@ -13,7 +13,7 @@ cp setenv.sh .profile.d/
 
 if ! [ -x "$(command -v db-migrate)" ]; then
     # install db-migrate globally
-    #echo "Installing db-migrate...."
+    echo "Installing db-migrate...."
     #npm install -g db-migrate
 fi
 

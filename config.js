@@ -4,7 +4,11 @@ var cfConfig = require('./lib/cf')
 var redis = cf.redis.call(cf, null)
   , rabbit = cf.rabbit.call(cf, null)
   , cassandra = cf.cassandra.call(cf, null)
-  , env = cf.env
+
+env = cf.env
+appname = cf.appname
+spaceName = cf.mode
+appUri = cf.appUri
 
 var config = {
   local: {
@@ -44,11 +48,11 @@ var config = {
     }
   },
   dev: {
-    appname: 'yookore-proxy',
-    mode: 'staging',
-    port: 3002,
+    appname: appname,
+    mode: spaceName,
+    port: process.env.VCAP_APP_PORT,
     protocol: 'http',
-    uri: 'http://localhost:3002',
+    uri: appUri,
     policyConfig: './strong-gateway/server/policy-config-dev.json',
     auth: {
       uri: 'http://192.168.10.144:3000/auth/'
@@ -76,15 +80,25 @@ var config = {
     },
     redis: {
       host: redis ? redis.credentials.host : undefined,
-      port: redis ? redis.credentials.port : undefined
+      port: redis ? redis.credentials.port : undefined,
+      cluster: [{
+        port: 6379,
+        host: '192.168.10.98'
+        }, {
+          port: 6379,
+          host: '192.168.10.4'
+        }, {
+          port: 6379,
+          host: '192.168.10.5'
+      }]
     }
   },
   production: {
-    appname: 'yookore-proxy',
-    mode: 'production',
-    port: 3002,
-    protocol: 'http',
-    uri: 'http://41.160.30.173:3002',
+    appname: appname,
+    mode: spaceName,
+    port: process.env.VCAP_APP_PORT,
+    protocol: 'https',
+    uri: appUri,
     policyConfig: './strong-gateway/server/policy-config.json',
     auth: {
       uri: 'http://192.168.10.144:3000/auth/'
